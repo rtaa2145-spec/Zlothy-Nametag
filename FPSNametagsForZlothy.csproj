@@ -8,12 +8,18 @@
     <ItemGroup>
       <None Remove="Resources\AACreator.png" />
       <None Remove="Resources\Admin.png" />
+      <None Remove="Resources\ariel.png" />
+      <None Remove="Resources\cheater.png" />
       <None Remove="Resources\Creator.png" />
       <None Remove="Resources\Fingerpainter.png" />
       <None Remove="Resources\Forestguide.png" />
       <None Remove="Resources\fpsnametagsforzlothy" />
+      <None Remove="Resources\gouda.png" />
+      <None Remove="Resources\graze.png" />
       <None Remove="Resources\Illustrator.png" />
+      <None Remove="Resources\pirate.png" />
       <None Remove="Resources\Stick.png" />
+      <None Remove="Resources\zlothy.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -23,11 +29,17 @@
     <ItemGroup>
       <EmbeddedResource Include="Resources\AACreator.png" />
       <EmbeddedResource Include="Resources\Admin.png" />
+      <EmbeddedResource Include="Resources\ariel.png" />
+      <EmbeddedResource Include="Resources\cheater.png" />
       <EmbeddedResource Include="Resources\Fingerpainter.png" />
       <EmbeddedResource Include="Resources\Forestguide.png" />
       <EmbeddedResource Include="Resources\fpsnametagsforzlothy" />
+      <EmbeddedResource Include="Resources\gouda.png" />
+      <EmbeddedResource Include="Resources\graze.png" />
       <EmbeddedResource Include="Resources\Illustrator.png" />
+      <EmbeddedResource Include="Resources\pirate.png" />
       <EmbeddedResource Include="Resources\Stick.png" />
+      <EmbeddedResource Include="Resources\zlothy.png" />
     </ItemGroup>
 
     <ItemGroup>

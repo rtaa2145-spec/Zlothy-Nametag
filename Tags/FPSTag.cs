@@ -32,7 +32,7 @@ public class FPSTag : MonoBehaviour
     {
         tagObj = new GameObject(name);
         tagObj.transform.SetParent(isThirdPerson ? GetComponent<Nametag>().thirdPersonTag.transform : GetComponent<Nametag>().firstPersonTag.transform);
-        tagObj.transform.localPosition = new Vector3(0f, 0.15f, 0f);
+        tagObj.transform.localPosition = new Vector3(0f, 0.125f, 0f);
 
         tagObj.layer = LayerMask.NameToLayer(layerName);
 
