@@ -331,9 +331,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.5.0-beta.1">
-        <PrivateAssets>all</PrivateAssets>
+      <PackageReference Include="bepinex.assemblypublicizer.msbuild" Version="0.4.1">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
       </PackageReference>
       <PackageReference Include="MonoMod.Backports" Version="1.1.0" />
     </ItemGroup>
