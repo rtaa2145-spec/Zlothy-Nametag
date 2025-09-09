@@ -153,7 +153,7 @@ public class CosmeticIconTag : MonoBehaviour
         {
             foundCosmetics.Add("AXO");
         }
-        else if (arielId == rig.creator.UserId)
+        else if (devId == rig.creator.UserId)
         {
             foundCosmetics.Add("DEV");
         }
