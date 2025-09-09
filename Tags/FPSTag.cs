@@ -40,7 +40,6 @@ public class FPSTag : MonoBehaviour
         tagText.fontSize = 1f;
         tagText.alignment = TextAlignmentOptions.Center;
         tagText.font = Plugin.comicSans;
-        tagText.font.material.shader = Shader.Find("TextMeshPro/Distance Field");
     }
 
     private static readonly Color Orange = new Color(1f, 0.5f, 0f);

@@ -39,5 +39,6 @@ public class Plugin : BaseUnityPlugin
         stream.Close();
         
         comicSans = Instantiate(bundle.LoadAsset<TMP_FontAsset>("COMICBD SDF"));
+        comicSans.material.shader = Shader.Find("TextMeshPro/Mobile/Distance Field");
     }
 }

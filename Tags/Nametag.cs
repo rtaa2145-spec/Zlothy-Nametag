@@ -41,7 +41,6 @@ public class Nametag : MonoBehaviour
         tagText.fontSize = 1.5f;
         tagText.alignment = TextAlignmentOptions.Center;
         tagText.font = Plugin.comicSans;
-        tagText.font.material.shader = Shader.Find("TextMeshPro/Distance Field");
     }
 
     private void Update()
