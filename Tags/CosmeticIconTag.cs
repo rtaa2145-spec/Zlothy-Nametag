@@ -20,9 +20,12 @@ public class CosmeticIconTag : MonoBehaviour
         { "LBAGS.", "FPSNametagsForZlothy.Resources.Illustrator.png" },
         { "LMAPY.", "FPSNametagsForZlothy.Resources.Forestguide.png" },
 
+        //stinky person placeholder
+        { "HANSOLO", "FPSNametagsForZlothy.Resources.gouda.png" },
+        //stinky above not below
+
         // cool people placeholders
         { "ZLOTHY", "FPSNametagsForZlothy.Resources.ZlothYLogoPurpleBoarder.png" },
-        { "HANSOLO", "FPSNametagsForZlothy.Resources.gouda.png" },
         { "GRAZE", "FPSNametagsForZlothy.Resources.graze.png" },
         { "ARIEL", "FPSNametagsForZlothy.Resources.ariel.png" },
         { "AXO", "FPSNametagsForZlothy.Resources.axo.png" },
@@ -46,12 +49,13 @@ public class CosmeticIconTag : MonoBehaviour
         "376C2C7C27C0D613",
         "96A75B23C8BBB4C9"
     };
-    
+
     private readonly HashSet<string> axoPlayerIds = new HashSet<string>
     {
         "5D5B4978C1300B24",
         "8E25CAA731003004"
     };
+
     private string hanSoloId = "A48744B93D9A3596";
     private string grazeId = "42D7D32651E93866";
     private string arielId = "C41A1A9055417A27";
@@ -123,9 +127,11 @@ public class CosmeticIconTag : MonoBehaviour
     private void CreateCosmeticIcons()
     {
         foreach (var icon in fpIcons)
-            if (icon != null) Destroy(icon);
+            if (icon != null)
+                Destroy(icon);
         foreach (var icon in tpIcons)
-            if (icon != null) Destroy(icon);
+            if (icon != null)
+                Destroy(icon);
 
         fpIcons.Clear();
         tpIcons.Clear();
@@ -190,7 +196,8 @@ public class CosmeticIconTag : MonoBehaviour
         foreach (var kvp in specialCosmetics)
         {
             //Ignore the other stuff
-            if (kvp.Key == "ZLOTHY" || kvp.Key == "HANSOLO" || kvp.Key == "GRAZE" || kvp.Key == "ARIEL" || kvp.Key == "AXO" || kvp.Key == "DEV" || kvp.Key == "CHEATER" || kvp.Key == "PIRATE")
+            if (kvp.Key == "ZLOTHY" || kvp.Key == "HANSOLO" || kvp.Key == "GRAZE" || kvp.Key == "ARIEL" ||
+                kvp.Key == "AXO" || kvp.Key == "DEV" || kvp.Key == "CHEATER" || kvp.Key == "PIRATE")
                 continue;
 
             if (rig.concatStringOfCosmeticsAllowed.Contains(kvp.Key))
