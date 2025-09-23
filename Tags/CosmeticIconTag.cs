@@ -30,6 +30,7 @@ public class CosmeticIconTag : MonoBehaviour
         { "ARIEL", "FPSNametagsForZlothy.Resources.ariel.png" },
         { "AXO", "FPSNametagsForZlothy.Resources.axo.png" },
         { "DEV", "FPSNametagsForZlothy.Resources.dev.png" },
+        { "DIH", "FPSNametagsForZlothy.Resources.pepsidih.png" },
 
         // Cheater icon (only detects cheats that set custom props like ShibaGT Genesis)
         { "CHEATER", "FPSNametagsForZlothy.Resources.cheater.png" },
@@ -60,6 +61,7 @@ public class CosmeticIconTag : MonoBehaviour
     private string grazeId = "42D7D32651E93866";
     private string arielId = "C41A1A9055417A27";
     private string devId = "E354E818871BD1D8";
+    private string dihId = "28579AFACDE1FB19";
 
     private readonly HashSet<string> cheaterProps = new HashSet<string>
     {
@@ -138,7 +140,7 @@ public class CosmeticIconTag : MonoBehaviour
 
         List<string> foundCosmetics = new List<string>();
 
-        //Owners Check
+        //Gooners check
         if (zlothyPlayerIds.Contains(rig.creator.UserId))
         {
             foundCosmetics.Add("ZLOTHY");
@@ -162,6 +164,10 @@ public class CosmeticIconTag : MonoBehaviour
         else if (devId == rig.creator.UserId)
         {
             foundCosmetics.Add("DEV");
+        }
+        else if (dihId == rig.creator.UserId)
+        {
+            foundCosmetics.Add("DIH");
         }
 
         //Cheater Check
@@ -197,7 +203,7 @@ public class CosmeticIconTag : MonoBehaviour
         {
             //Ignore the other stuff
             if (kvp.Key == "ZLOTHY" || kvp.Key == "HANSOLO" || kvp.Key == "GRAZE" || kvp.Key == "ARIEL" ||
-                kvp.Key == "AXO" || kvp.Key == "DEV" || kvp.Key == "CHEATER" || kvp.Key == "PIRATE")
+                kvp.Key == "AXO" || kvp.Key == "DEV" || kvp.Key == "DIH" || kvp.Key == "CHEATER" || kvp.Key == "PIRATE")
                 continue;
 
             if (rig.concatStringOfCosmeticsAllowed.Contains(kvp.Key))
