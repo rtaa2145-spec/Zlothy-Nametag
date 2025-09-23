@@ -37,13 +37,14 @@
       <EmbeddedResource Include="Resources\Illustrator.png" />
       <EmbeddedResource Include="Resources\pirate.png" />
       <EmbeddedResource Include="Resources\Stick.png" />
-      <EmbeddedResource Include="Resources\zlothy.png" />
       <None Remove="Resources\axo.png" />
       <EmbeddedResource Include="Resources\axo.png" />
       <None Remove="Resources\dev.png" />
       <EmbeddedResource Include="Resources\dev.png" />
       <None Remove="Resources\fpsnametagsforzlothy" />
       <EmbeddedResource Include="Resources\fpsnametagsforzlothy" />
+      <None Remove="Resources\ZlothYLogoPurpleBoarder.png" />
+      <EmbeddedResource Include="Resources\ZlothYLogoPurpleBoarder.png" />
     </ItemGroup>
 
     <ItemGroup>

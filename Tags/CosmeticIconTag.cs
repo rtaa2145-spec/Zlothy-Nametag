@@ -21,7 +21,7 @@ public class CosmeticIconTag : MonoBehaviour
         { "LMAPY.", "FPSNametagsForZlothy.Resources.Forestguide.png" },
 
         // cool people placeholders
-        { "ZLOTHY", "FPSNametagsForZlothy.Resources.zlothy.png" },
+        { "ZLOTHY", "FPSNametagsForZlothy.Resources.ZlothYLogoPurpleBoarder.png" },
         { "HANSOLO", "FPSNametagsForZlothy.Resources.gouda.png" },
         { "GRAZE", "FPSNametagsForZlothy.Resources.graze.png" },
         { "ARIEL", "FPSNametagsForZlothy.Resources.ariel.png" },
