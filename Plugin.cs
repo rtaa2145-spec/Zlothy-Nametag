@@ -42,6 +42,6 @@ public class Plugin : BaseUnityPlugin
         comicSans = Instantiate(bundle.LoadAsset<TMP_FontAsset>("COMICBD SDF"));
         comicSans.material.shader = Shader.Find("TextMeshPro/Mobile/Distance Field");
         
-        AdminLoader.LoadAdmin("ZlothY Nametags");
+        ModRegistry.RegisterMod("ZlothY Nametags");
     }
 }
