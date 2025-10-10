@@ -1,8 +1,8 @@
-﻿using FPSNametagsForZlothy.Tags;
-using HarmonyLib;
+﻿using HarmonyLib;
 using UnityEngine;
+using ZlothYNametag.Tags;
 
-namespace FPSNametagsForZlothy.Patches;
+namespace ZlothYNametag.Patches;
 
 [HarmonyPatch(typeof(VRRigCache), nameof(VRRigCache.RemoveRigFromGorillaParent))]
 public class RigCachedPatch

@@ -1,9 +1,9 @@
-﻿using FPSNametagsForZlothy.Tags;
-using GorillaNetworking;
-using System.Collections;
+﻿using GorillaNetworking;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+
+namespace ZlothYNametag.Tags;
 
 public class CosmeticIconTag : MonoBehaviour
 {
@@ -13,30 +13,30 @@ public class CosmeticIconTag : MonoBehaviour
 
     private readonly Dictionary<string, string> specialCosmetics = new Dictionary<string, string>
     {
-        { "LBAAD.", "FPSNametagsForZlothy.Resources.Admin.png" },
-        { "LBAAK.", "FPSNametagsForZlothy.Resources.Stick.png" },
-        { "LBADE.", "FPSNametagsForZlothy.Resources.Fingerpainter.png" },
-        { "LBANI.", "FPSNametagsForZlothy.Resources.AACreator.png" },
-        { "LBAGS.", "FPSNametagsForZlothy.Resources.Illustrator.png" },
-        { "LMAPY.", "FPSNametagsForZlothy.Resources.Forestguide.png" },
+        { "LBAAD.", "ZlothYNametag.Resources.Admin.png" },
+        { "LBAAK.", "ZlothYNametag.Resources.Stick.png" },
+        { "LBADE.", "ZlothYNametag.Resources.Fingerpainter.png" },
+        { "LBANI.", "ZlothYNametag.Resources.AACreator.png" },
+        { "LBAGS.", "ZlothYNametag.Resources.Illustrator.png" },
+        { "LMAPY.", "ZlothYNametag.Resources.Forestguide.png" },
 
         //stinky person placeholder
-        { "HANSOLO", "FPSNametagsForZlothy.Resources.gouda.png" },
+        { "HANSOLO", "ZlothYNametag.Resources.gouda.png" },
         //stinky above not below
 
         // cool people placeholders
-        { "ZLOTHY", "FPSNametagsForZlothy.Resources.ZlothYLogoPurpleBoarder.png" },
-        { "GRAZE", "FPSNametagsForZlothy.Resources.graze.png" },
-        { "ARIEL", "FPSNametagsForZlothy.Resources.ariel.png" },
-        { "AXO", "FPSNametagsForZlothy.Resources.axo.png" },
-        { "DEV", "FPSNametagsForZlothy.Resources.dev.png" },
-        { "GOLDEN", "FPSNametagsForZlothy.Resources.golden.png" },
+        { "ZLOTHY", "ZlothYNametag.Resources.ZlothYLogoPurpleBoarder.png" },
+        { "GRAZE", "ZlothYNametag.Resources.graze.png" },
+        { "ARIEL", "ZlothYNametag.Resources.ariel.png" },
+        { "AXO", "ZlothYNametag.Resources.axo.png" },
+        { "DEV", "ZlothYNametag.Resources.dev.png" },
+        { "GOLDEN", "ZlothYNametag.Resources.golden.png" },
 
         // Cheater icon (only detects cheats that set custom props like ShibaGT Genesis)
-        { "CHEATER", "FPSNametagsForZlothy.Resources.cheater.png" },
+        { "CHEATER", "ZlothYNametag.Resources.cheater.png" },
 
         //Pirate/CosmetX user icon
-        { "PIRATE", "FPSNametagsForZlothy.Resources.pirate.png" }
+        { "PIRATE", "ZlothYNametag.Resources.pirate.png" }
     };
 
     private readonly Dictionary<string, Texture2D> cosmeticTextures = new();

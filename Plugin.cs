@@ -3,12 +3,12 @@ using System.Reflection;
 using Admin.Admin;
 using BepInEx;
 using ExitGames.Client.Photon;
-using FPSNametagsForZlothy.Patches;
+using ZlothYNametag.Patches;
 using Photon.Pun;
 using TMPro;
 using UnityEngine;
 
-namespace FPSNametagsForZlothy;
+namespace ZlothYNametag;
 
 [BepInPlugin(Constants.PluginGuid, Constants.PluginName, Constants.PluginVersion)]
 public class Plugin : BaseUnityPlugin
@@ -35,7 +35,7 @@ public class Plugin : BaseUnityPlugin
         thirdPersonCameraTransform = GorillaTagger.Instance.thirdPersonCamera.transform.GetChild(0);
 
         Stream stream = Assembly.GetExecutingAssembly()
-            .GetManifestResourceStream("FPSNametagsForZlothy.Resources.fpsnametagsforzlothy");
+            .GetManifestResourceStream("ZlothYNametag.Resources.fpsnametagsforzlothy");
         AssetBundle bundle = AssetBundle.LoadFromStream(stream);
         stream.Close();
         

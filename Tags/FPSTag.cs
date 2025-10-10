@@ -2,7 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-namespace FPSNametagsForZlothy.Tags;
+namespace ZlothYNametag.Tags;
 
 public class FPSTag : MonoBehaviour
 {

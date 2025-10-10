@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace FPSNametagsForZlothy.Tags;
+namespace ZlothYNametag.Tags;
 
 public class Nametag : MonoBehaviour
 {

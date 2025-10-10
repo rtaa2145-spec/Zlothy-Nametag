@@ -1,10 +1,8 @@
-﻿using FPSNametagsForZlothy.Tags;
-using FPSNametagsForZlothy;
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
-
+namespace ZlothYNametag.Tags;
     public class PlatformTag : MonoBehaviour
     {
         private GameObject firstPersonTag;

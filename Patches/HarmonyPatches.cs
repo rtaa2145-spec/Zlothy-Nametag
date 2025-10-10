@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using HarmonyLib;
 
-namespace FPSNametagsForZlothy.Patches;
+namespace ZlothYNametag.Patches;
 
 public class HarmonyPatches
 {
