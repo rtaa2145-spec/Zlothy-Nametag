@@ -12,6 +12,7 @@ namespace ZlothYNametag;
 [BepInPlugin(Constants.PluginGuid, Constants.PluginName, Constants.PluginVersion)]
 public class Plugin : BaseUnityPlugin
 {
+    // ReSharper disable InconsistentNaming
     public static Transform firstPersonCameraTransform;
     public static Transform thirdPersonCameraTransform;
 
@@ -39,9 +40,11 @@ public class Plugin : BaseUnityPlugin
                                 .GetManifestResourceStream("ZlothYNametag.Resources.fpsnametagsforzlothy");
 
         AssetBundle bundle = AssetBundle.LoadFromStream(stream);
+        // ReSharper disable once PossibleNullReferenceException
         stream.Close();
 
         comicSans                 = Instantiate(bundle.LoadAsset<TMP_FontAsset>("COMICBD SDF"));
+        // ReSharper disable once ShaderLabShaderReferenceNotResolved
         comicSans.material.shader = Shader.Find("TextMeshPro/Mobile/Distance Field");
     }
 }
