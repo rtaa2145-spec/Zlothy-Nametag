@@ -11,12 +11,12 @@ public class SetColourPatch
     {
         if (__instance.isLocal)
             return;
-        
-        __instance.GetOrAddComponent<Nametag>(out Nametag nametag);
+
+        __instance.GetOrAddComponent(out Nametag nametag);
         nametag.UpdateColour(color);
-        
-        __instance.GetOrAddComponent<FPSTag>(out _);
-        __instance.GetOrAddComponent<PlatformTag>(out _);
-        __instance.GetOrAddComponent<CosmeticIconTag>(out _);
+
+        __instance.GetOrAddComponent<FPSTag>(out FPSTag _);
+        __instance.GetOrAddComponent<PlatformTag>(out PlatformTag _);
+        __instance.GetOrAddComponent<CosmeticIconTag>(out CosmeticIconTag _);
     }
 }

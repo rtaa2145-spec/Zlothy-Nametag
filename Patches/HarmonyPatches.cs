@@ -5,10 +5,10 @@ namespace ZlothYNametag.Patches;
 
 public class HarmonyPatches
 {
+    private const  string  instanceId = Constants.PluginGuid;
     private static Harmony harmonyInstance;
 
     private static bool isPatched;
-    private const string instanceId = Constants.PluginGuid;
 
     internal static void ApplyHarmonyPatches()
     {

@@ -75,14 +75,17 @@
         <Reference Include="clipper_library">
             <HintPath>$(GameAssemblyPath)\clipper_library.dll</HintPath>
         </Reference>
+        <Reference Include="GorillaFriends">
+            <HintPath>$(PluginsPath)\GorillaFriends\GorillaFriends.dll</HintPath> <!-- zlothy you son of a gun (bitch) -->
+        </Reference>
         <Reference Include="Mono.Security">
             <HintPath>$(GameAssemblyPath)\Mono.Security.dll</HintPath>
         </Reference>
-        <Reference Include="MonoMod.RuntimeDetour">
-          <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+        <Reference Include="Newtonsoft.Json">
+            <HintPath>$(GameAssemblyPath)\Newtonsoft.Json.dll</HintPath>
         </Reference>
-        <Reference Include="MonoMod.Utils">
-          <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Gorilla Tag\BepInEx\core\MonoMod.Utils.dll</HintPath>
+        <Reference Include="Fusion.Runtime">
+            <HintPath>$(GameAssemblyPath)\Fusion.Runtime.dll</HintPath>
         </Reference>
         <Reference Include="Oculus.Platform">
             <HintPath>$(GameAssemblyPath)\Oculus.Platform.dll</HintPath>
@@ -113,6 +116,12 @@
         </Reference>
         <Reference Include="PlayFab">
             <HintPath>$(GameAssemblyPath)\PlayFab.dll</HintPath>
+        </Reference>
+        <Reference Include="SteamVR">
+            <HintPath>$(GameAssemblyPath)\SteamVR.dll</HintPath>
+        </Reference>
+        <Reference Include="SteamVR_Actions">
+            <HintPath>$(GameAssemblyPath)\SteamVR_Actions.dll</HintPath>
         </Reference>
         <Reference Include="System.EnterpriseServices">
             <HintPath>$(GameAssemblyPath)\System.EnterpriseServices.dll</HintPath>
@@ -338,11 +347,11 @@
         </Reference>
     </ItemGroup>
 
+
     <ItemGroup>
       <PackageReference Include="bepinex.assemblypublicizer.msbuild" Version="0.4.1">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
-      <PackageReference Include="MonoMod.Backports" Version="1.1.0" />
     </ItemGroup>
 </Project>
