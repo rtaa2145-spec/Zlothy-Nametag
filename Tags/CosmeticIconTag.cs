@@ -127,6 +127,7 @@ public class CosmeticIconTag : MonoBehaviour
             return null;
 
         byte[] imageData = new byte[stream.Length];
+        // ReSharper disable once MustUseReturnValue
         stream.Read(imageData, 0, imageData.Length);
 
         Texture2D texture = new(2, 2);
