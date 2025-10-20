@@ -55,7 +55,7 @@ public class CosmeticIconTag : MonoBehaviour
     private readonly HashSet<string> axoPlayerIds =
     [
             "5D5B4978C1300B24",
-            "8E25CAA731003004",
+            "288A09292E919048",
     ];
 
     private readonly HashSet<string> goldenPlayerIds =
